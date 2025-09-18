@@ -48,16 +48,20 @@ python -m newspaper --url=https://cnsmaryland.org/2025/08/02/in-the-deep-woods-a
 
 Read the story: https://cnsmaryland.org/2025/08/02/in-the-deep-woods-a-little-owl-teaches-big-lessons/ and then compare that to the summary. Is the summary a good description? Why or why not?
 
-PUT YOUR ANSWER HERE.
+PUT YOUR ANSWER HERE. My 3 paragraph reponse was very news heavy but explained all the keys points of the story. The CNS full story does a great job with quotes and stories integrating the audience into scenes of Hengeveld during a capture. The summary fails to do this and leaves the reader with the understanding of the basic details but no flare. 
 
-Now it's your turn: find a story that you wrote or are very familiar with that's published online, and try the same process, altering the command and then evaluating the result.
+
+Now it's your turn: find a story that you wrote or are very familiar with that's published online, and try the same process, altering the command and then evaluating the result."
+
+I chose to send it an ESPN story about the 3-pointer that I used for another class project assignment last semester.
+
 
 ```bash
 
 
 ```
 
-YOUR EVALUATION HERE.
+YOUR EVALUATION HERE. The story is very dense with data about how the 3-pointer is changing and the LLM did a suprisningly good job analyzing and story and incoperating numbers. Overall this explanation is well done becasue it weaves in the important quotes from Adam Silver and properly sets up the context of the story. 
 
 ### Restructuring Information
 
