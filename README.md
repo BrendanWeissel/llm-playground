@@ -53,15 +53,15 @@ PUT YOUR ANSWER HERE. My 3 paragraph reponse was very news heavy but explained a
 
 Now it's your turn: find a story that you wrote or are very familiar with that's published online, and try the same process, altering the command and then evaluating the result."
 
-I chose to send it an ESPN story about the 3-pointer that I used for another class project assignment last semester.
+
 
 
 ```bash
 
-
+python -m newspaper --url=https://www.espn.com/nba/story/_/id/44422379/too-many-3-pointers-why-nba-think-issue | llm -m groq/openai/gpt-oss-120b "summarize this story in 3 paragraphs"
 ```
 
-YOUR EVALUATION HERE. The story is very dense with data about how the 3-pointer is changing and the LLM did a suprisningly good job analyzing and story and incoperating numbers. Overall this explanation is well done becasue it weaves in the important quotes from Adam Silver and properly sets up the context of the story. 
+YOUR EVALUATION HERE. I chose to send it an ESPN story about the 3-pointer that I used for another class project assignment last semester. The story is very dense with data about how the 3-pointer is changing and the LLM did a suprisningly good job analyzing and story and incoperating numbers. Overall this explanation is well done becasue it weaves in the important quotes from Adam Silver and properly sets up the context of the story. 
 
 ### Restructuring Information
 
@@ -77,9 +77,11 @@ Now it's your turn: find a short (3 pages or less) news story that contains unst
 
 ```bash
 
+cat sydney.txt | llm -m groq-llama-3.3-70b "produce only an array name, time and event for all the track results mentioned in this article and any important info about the, ex. world record." 
+
 ```
 
-PUT YOUR EVALUATION HERE.
+PUT YOUR EVALUATION HERE. I chose to look at an article about track results from the recent world champs. The LLM did exactly what I thought and numbered them 1-10 in a very easy way to undertand thet data. 
 
 ### Vision Models
 
@@ -94,10 +96,10 @@ You should get something like: "The license number in the image is D25922." as a
 Now it's your turn: find an image _that you would be ok showing to your grandmother_ and make sure it's a PNG, GIF or JPG file. Drag it into the codespace so you can see it in your list of files, then change the command below so that it refers to your image and asks a different question. Edit the README to do that so I can see your work. How did the LLM do?
 
 ```bash
-llm -m gemini-2.5-flash "YOUR QUESTION" -a YOUR_FILE 
+llm -m gemini-2.5-flash "what event do you think these people are attending?" -a IMG_0262.JPEG
 ```
 
-PUT YOUR EVALUATION HERE.
+PUT YOUR EVALUATION HERE. I sent a picture of me and my brother at his wedding from last month! The LLM have 5 guesses for what the event could be. It guesses accurately that a wedding was being attended. Cool! 
 
 
 ### Audio Models
@@ -105,10 +107,10 @@ PUT YOUR EVALUATION HERE.
 Another option is to use models that transcribe audio. Listen to [this mp3 file](https://dare.wisc.edu/audio/south-carolina-desegregating-edisto-state-park/) from the Dictionary of American Regional English project at the University of Wisconsin. Click the download link and save the .mp3 file to your computer, then drag it to the file to the list of files on the left. Then, using llm, have the `whisper-large-v3-turbo` model from Groq provide a transcription using that file name.
 
 ```bash
-llm -m whisper-large-v3-turbo -a YOUR_FILE 
+llm -m groq/whisper-large-v3-turbo -a SC068clip.mp3
 ```
 
-How did the LLM do compared to the original transcript?
+How did the LLM do compared to the original transcript? Overall it did a good job but a human would need to go in and touch it up for publication. It got confused on some words that were mumbled but overall it worked. I tried to upload another audio project I worked on around 4 min but it was too long to be transcribed. 
 
 PUT YOUR EVALUATION HERE.
 
@@ -116,7 +118,7 @@ PUT YOUR EVALUATION HERE.
 
 Thinking about news archives, write a few examples of how you might use LLMs to help (beyond writing code). Be specific: don't say that you'll use it to accomplish a larger goal. Instead, say how it could perform or improve specific tasks. I encourage you to think big.
 
-PUT YOUR ANSWERS HERE.
+PUT YOUR ANSWERS HERE. LLM's can be used to transcribe long podcast episodes to gather more attention. It could look at a news site and pull all the completed stories and look at the type of people who that specific place usally interviews. Specificaly looking at demographics. Another way is by looking over all the headlines from a news site and seeing the trends in terms of content and length. There are so many useful things!
 
 ### Finishing Up
 
